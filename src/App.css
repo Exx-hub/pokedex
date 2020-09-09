@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  border: 0;
+  appearance: none;
+}
+
+html {
+  font-size: 1em;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.2rem;
+  height: 10%;
+}
+.header h2:nth-of-type(2n) {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.catch-area {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+}
+.catch-area h1 {
+  color: white;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+.catch-area img {
+  width: 25%;
+}
+.catch-area h2 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 1.5em;
+}
+.catch-area button {
+  background-color: yellow;
+  margin: 15px 0;
+  font-size: 1.2em;
+  padding: 3px 20px;
+  width: 180px;
+}
+.pokelist-container {
+  background-color: #4b4d4b;
+  height: 64vh;
+}
+
+.pokelist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  row-gap: 15px;
+  column-gap: 15px;
+  background-color: #4b4d4b;
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+}
+.pokelist h3 {
+  position: absolute;
+  top: 0;
+}
+.pokemon-card {
+  margin: 15px;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.pokemon-card img {
+  margin: 15px;
+  padding: 5px;
+  background-color: #fff;
+}
+.pokemon-card p {
+  text-align: center;
+
+  margin: 0 15px 10px 15px;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.pokemon-card button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px;
+  background-color: firebrick;
+  color: white;
+  border-radius: 0.2em;
+  cursor: pointer;
+}
